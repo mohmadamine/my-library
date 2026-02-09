@@ -20,5 +20,12 @@ The library is divided into **Modules**. This makes it easy to use and update.
        **count_digit_frequency()**:It counts how many times a specific digit appears inside a larger number
 
 
+**⚙️ Processing module (`Processing_Lib`)**
+     A library to transform data into new shapes.
+**Available Functions:**
+     **reversed_number()**:A function to reverse the order of digits.
+
+      
+
 **✨ Documented and organized by: [Mohammad Amine]**
 
