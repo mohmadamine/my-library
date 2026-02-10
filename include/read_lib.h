@@ -17,5 +17,13 @@ cin>>number;
 return number;
 }
 
+string read_password(string message)
+{
+    string password;
+    cout << message;
+    cin >> password;
+    return password;
+}
+
 } 
 
