@@ -4,7 +4,7 @@
 
 using namespace std;
 
-namespace processing_numbers
+namespace processing_lib
 {
     int reversed_number(int number)
     {
@@ -93,49 +93,47 @@ namespace processing_numbers
         }
         cout << endl;
     }
-
-}
-
-namespace processing_text
-{
-void print_inverted_litter_pattern(int number)
-{
-    for (int i = 65 + number - 1; i >= 65; i--)
+    void print_inverted_litter_pattern(int number)
     {
-        for (int j = 1; j <= number - (65 + number - 1 - i); j++)
+        for (int i = 65 + number - 1; i >= 65; i--)
         {
-            cout << char(i);
+            for (int j = 1; j <= number - (65 + number - 1 - i); j++)
+            {
+                cout << char(i);
+            }
+            cout << "\n";
         }
-        cout << "\n";
+        cout << endl;
     }
-    cout << endl;
-}
 
-void print_ltter_pattern(int number)
-{
-    for (int i = 65; i <= 65 + number - 1; i++)
+    void print_ltter_pattern(int number)
     {
-        for (int j = 1; j <= i - 65 + 1; j++)
+        for (int i = 65; i <= 65 + number - 1; i++)
         {
-            cout << char(i);
+            for (int j = 1; j <= i - 65 + 1; j++)
+            {
+                cout << char(i);
+            }
+            cout << "\n";
         }
-        cout << "\n";
+        cout << endl;
     }
-    cout << endl;
-}
 
-
-string encrypt_text(string text ,short encryption_key){
-for(int i =0;i<=text.length();i++){
-    text[i] = char(int(text[i])+encryption_key);
-}
-return text;
-}
-
-string decrypt_text(string text,short encryption_key){
-    for(int i=0;i<=text.length();i++){
-        text[i] = char(int(text[i])-encryption_key);
+    string encrypt_text(string text, short encryption_key)
+    {
+        for (int i = 0; i <= text.length(); i++)
+        {
+            text[i] = char(int(text[i]) + encryption_key);
+        }
+        return text;
     }
-    return text;
-}
+
+    string decrypt_text(string text, short encryption_key)
+    {
+        for (int i = 0; i <= text.length(); i++)
+        {
+            text[i] = char(int(text[i]) - encryption_key);
+        }
+        return text;
+    }
 }
