@@ -7,7 +7,7 @@ The library is divided into **Modules**. This makes it easy to use and update.
        This module gets data from the user and checks if it is correct.
 **Available Functions:** 
        **`read_positive_number()`**: It reads a positive number. If the input is wrong, it asks the user to try again.
-       **`read_password()`**
+       **`read_password()`**: It reads a password from the user, consisting of 3 uppercase letters between AAA and ZZZ (example: password = "AYC").
 
 **✅ Check Module (`check_lib`)**
        This module tests the data to see if it follows specific rules.
