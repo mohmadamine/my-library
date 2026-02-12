@@ -25,5 +25,12 @@ string read_password(string message)
     return password;
 }
 
+string read_text(){
+    string text;
+   cout<<"please enter text : " ;
+   cin>>text;
+   return text;
+}
+
 } 
 
