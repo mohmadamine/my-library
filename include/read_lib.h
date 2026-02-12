@@ -32,5 +32,17 @@ string read_text(){
    return text;
 }
 
+void read_array(int arr[100],int &arr_length){
+    cout<<"please enter number of element : ";
+    cin>>arr_length;
+    cout<<"enter array element : \n";
+    for(int i = 0;i<arr_length;i++){
+    cout<<"element ["<<i+1<<"] : ";
+    cin>>arr[i]; 
+    }
+    cout<<endl;
+
+}
+
 } 
 

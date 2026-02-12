@@ -64,4 +64,13 @@ string generate_key()
     return key;
 }
 
+void generate_keys(short number_of_keys)
+{
+    for (int i = 1; i <= number_of_keys; i++)
+    {
+        cout << "key[" << i << "] : ";
+        cout << generation_lib::generate_key() << endl;
+    }
+}
+
 }
