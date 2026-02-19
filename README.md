@@ -23,6 +23,7 @@ The library is divided into **Modules**. This makes it easy to use and update.
        **`check_prime_number()`** (line 32): It checks if the number is a **Prime Number**.
        **`is_number_found_in_array()`** (line 54): It checks if a specific number is inside the array.
        **`check_array_is_palindrome_or_not()`** (line 59): It checks if the array is the same from left to right and right to left.
+       **`get_final_result(bool ispass)`** (line 71): 
 
 
 
